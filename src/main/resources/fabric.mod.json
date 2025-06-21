@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "middleearthmod",
+	"version": "${version}",
+	"name": "MiddleEarthMod",
+	"description": "A LOTR themed mod to enjoy with the lads!",
+	"authors": [
+		"Johnald McGee"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/middleearthmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.johnt.middleearthmod.MiddleEarthMod"
+		],
+		"fabric-datagen": [
+			"net.johnt.middleearthmod.MiddleEarthModDataGenerator"
+		],
+		"client": [
+			"net.johnt.middleearthmod.MiddleEarthModClient"
+		]
+	},
+	"mixins": [
+		"middleearthmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
